@@ -1,0 +1,23 @@
+name: Build hardhat project and Test
+
+on: [push, pull_request]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@4
+      - name: Use Node.js 20
+        uses: actions/setup-node@4
+        with:
+          node-version: "20.x"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Compile contracts
+        run: npx hardhat compile
+
+      - name: Testing contracts
+        run: npx hardhat test
