@@ -1,2 +1,8 @@
-# OrbitSphereContracts
-This repository contains the smart contracts for OrbitSphere. Manage server rentals securely using USDC/USDT, with features like payment processing, rental tracking, and automation triggers for AWS server creation and deletion.
+# OrbitSphere Contracts
+This repository hosts the smart contracts powering OrbitSphere, the decentralized server lending platform. These contracts enable secure server rentals using USDC/USDT, handle payment processing, and track rental durations. Key features include:
+
+- Payment management for hourly rentals.
+- Automated event triggers for backend listeners.
+- Transparent and decentralized operations.
+
+The contracts are designed for reliability, security, and compatibility with blockchain standards, forming the foundation of OrbitSphere’s infrastructure.
